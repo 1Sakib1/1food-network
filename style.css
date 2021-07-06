@@ -1,0 +1,327 @@
+/* Global Properties */
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Montserrat, "sans-serif";
+  font-size: 1em;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Reusable Properties */
+
+.highlighted-text {
+  color:tomato;
+}
+.orange{color:orange ;}
+
+.brand-name {
+  display: block;
+  color: rgb(87, 87, 87);
+  font-family: "Fredoka One", cursive;
+  font-size: 1.5em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.btn {
+  padding: 1.5em 3em;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(rgb(255, 165, 0), rgb(255, 99, 71));
+  border-radius: 2em;
+  box-shadow: 2px 3px 15px rgba(255, 99, 71, 0.61);
+}
+
+.btn1 {
+  padding: 1.5em 3em;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(rgb(137, 8, 197), rgb(216, 48, 18));
+  border-radius: 2em;
+  box-shadow: 2px 3px 15px rgba(21, 81, 192, 0.712);
+}
+
+/* Brand Name & Navbar Styling */
+
+#navbar {
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8%;
+  position: fixed;
+  background: rgba(70, 215, 241, 0.575);
+  box-shadow: 0px 0px 5px rgba(223, 223, 223, 0.5);
+}
+
+.brand {
+  width: 50%;
+  padding-left: 8%;
+}
+
+.nav-list {
+  display: flex;
+  margin-left: 25%;
+  width: 50%;
+}
+
+.nav-list a {
+  display: block;
+  padding: 1em 1.5em;
+  color: rgb(24, 25, 31);
+  font-size: 0.8em;
+  font-weight: 400;
+}
+
+.nav-list a:hover {
+  border-bottom: 5px solid rgb(251, 146, 74);
+  border-radius: 0.5em;
+}
+
+/* Home Section */
+
+#home {
+  display: flex;
+}
+
+.wrapper {
+  width: 50%;
+  margin-top: 6%;
+}
+
+.main-article {
+  margin-top: 10em;
+  padding-left: 15%;
+}
+
+.main-heading {
+  margin: 0;
+  padding: 0;
+  font-size: 3.5em;
+  font-weight: 700;
+  color: rgb(87, 87, 87);
+  line-height: 1.5em;
+}
+
+.article-content {
+  width: 500px;
+  margin-bottom: 3em;
+  color: rgb(130, 130, 130);
+  font-size: 1.2em;
+  font-weight: 500;
+  line-height: 1.5em;
+}
+
+/* About Section */
+
+#about {
+  display: flex;
+  background-image: url("images/about-bg.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 100%;
+}
+
+.about-image {
+  margin-left: 25%;
+  width: 45%;
+}
+
+.about-article {
+  margin-top: 5em;
+}
+
+.about-heading {
+  color: rgb(112, 112, 112);
+  font-size: 2.5em;
+}
+
+.about-content {
+  width: 450px;
+  color: rgb(24, 25, 31);
+  font-weight: 500;
+  line-height: 2em;
+  margin-bottom: 5em;
+}
+
+/* Recipe Section  */
+
+#recipies {
+  margin-top: 5em;
+}
+
+.recipe-description {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.recipe-heading {
+  color: rgb(103, 103, 103);
+  font-size: 2em;
+}
+
+.recipe-subhead {
+  color: rgb(37, 37, 37);
+  font-weight: 500;
+  line-height: 1.5em;
+}
+
+.recipe-area {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 20%;
+}
+
+.recipe-box {
+  margin: 5% 5%;
+  padding: 2%;
+  color: rgb(25, 51, 199);
+  border-radius: 5%;
+  box-shadow: 2px 3px 15px rgba(0, 0, 0, 0.171);
+}
+
+.recipe-image {
+  width: 337px;
+  height: 256px;
+  border-radius: 5%;
+}
+
+.recipe-title {
+  font-size: 1.8em;
+  font-weight: 800;
+}
+
+.recipe-content {
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+/* Statistics Section */
+
+#stats {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5em 5em;
+}
+
+.stat-box {
+  color: hsl(231, 13%, 11%);
+}
+
+.stat-count {
+  font-size: 3em;
+}
+
+.stat-content {
+  margin-top: -2em;
+  font-weight: 500;
+}
+
+.stat-count:hover {
+  color: rgb(251, 146, 74);
+  transform: translateY(-5px);
+}
+
+/* Subscription Section */
+
+.subscribe-section {
+  margin-bottom: 3em;
+  text-align: center;
+}
+.container h1 {
+  font-size: 2em;
+  color: rgb(24, 25, 31);
+}
+
+.container p {
+  color: rgb(24, 25, 31);
+  font-weight: 500;
+}
+
+.form-container {
+  display: inline-block;
+  margin: 1em 10em;
+}
+
+input[type="email"] {
+  padding: 1em;
+  margin: 1em;
+  width: 400px;
+  border: 2px solid rgba(0, 0, 0, 0.171);
+  border-radius: 2em;
+  font-size: 1em;
+}
+
+.submit-button {
+  padding: 1em 2em;
+  margin: 1em;
+  border-radius: 2em;
+  font-size: 1em;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(rgb(255, 165, 0), rgb(255, 99, 71));
+  box-shadow: 2px 3px 15px rgba(255, 99, 71, 0.61);
+}
+
+.submit-button2 {
+  padding: 1em 2em;
+  margin: 1em;
+  border-radius: 2em;
+  font-size: 1em;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(rgb(0, 0, 0), rgb(255, 99, 71));
+  box-shadow: 2px 3px 15px rgba(255, 99, 71, 0.61);
+}
+
+/* Footer Section */
+
+.footer-section {
+  margin: 0;
+  padding: 1em 0 6em 0;
+  text-align: center;
+  width: 100%;
+  background-color: #0b0d17;
+} 
+
+.footer-section h1 {
+  font-size: 2em;
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+
+.footer-section p {
+  color: #ffffff;
+  font-size: 0.9em;
+}
+
+
+  
+
+
+
+
+.danger:hover {
+  background-color:#e20a0af5;
+  color: #FFFFFF; }
+
+  .danger2:hover {
+    background-color:#128d0d;
+    color: #FFFFFF;}
+    .danger3:hover {
+      background-color:#0b999e;
+      color: #FFFFFF; }
+    
+    
+      .ancor{<a target="blank" class="danger" href="https://www.allrecipes.com/recipe/230082/cucumber-salad-with-dill-vinaigrette/"></a> 
+      }  
